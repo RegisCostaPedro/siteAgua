@@ -21,10 +21,17 @@ body {
 }
 
 h1 {
+
   color: #ffffff;
   font-weight: 700;
 }
-
+p{    
+    
+    font-size: 13px;
+    display: flex;
+    position: absolute;
+    margin-top: 490px;
+}
 .form {
   position: relative;
   width: 450px;

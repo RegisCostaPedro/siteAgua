@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&family=Noto+Sans:wght@100;200;300;400;500;600;700&display=swap");
+*{
+    margin: 0;
+}
+html,
+body {
+  height: 100%;
+
+  font-family: "Montserrat", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+}
+
+body {
+
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  /* background-image: url(img/backgroundCad.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;*/
+
+  background: rgb(205,227,227);
+  background: linear-gradient(130deg, rgba(205,227,227,1) 0%, rgba(0,69,144,1) 45%);
+}
+
+.form {
+    position: absolute;
+    width: 450px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: auto;
+    align-items: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(205, 227, 227);
+    background: linear-gradient(
+      0deg,
+      #cde3e3 0%,
+      #004590 100%
+    );
+  
+
+
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
+
+.form h1 {
+  color: #ffffff;
+  font-weight: 700;
+  position: absolute;
+  padding-bottom: 75%;
+}
+.head-form {
+
+  font-size: 13px;
+
+  position: absolute;
+  padding-bottom:60%;
+
+}
+
+.head-form p {  
+    
+  font-size: 12px;
+  font-weight: 800px;
+
+}
+
+.footer-form {
+    pointer-events: none;
+
+  font-size: 13px;
+
+  position: absolute;
+  padding-top:40%;
+  margin-right: 230px;
+}
+.footer-form p {
+    
+    pointer-events: auto;
+}
+
+
+.Waves {
+  position: absolute;
+
+  width: 450px;
+  height: 100px;
+
+  bottom: 0;
+  left: 0;
+
+  background-size: 200% 200%;
+
+  -webkit-backdrop-filter: blur();
+  backdrop-filter: blur(2px);
+}
+.wave {
+  position: relative;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  overflow: auto;
+
+  background-size: 200% 200%;
+}
+
+
+.form-item {
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  position: relative;
+  margin-bottom: 15px;
+}
+.form-item input {
+  display: block;
+  width: 400px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #08122c;
+  transition: all 0.3s ease;
+  padding: 15px;
+  margin: auto;
+  border-color: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.form-item input:focus {
+    
+  border-color: blue;
+}
+
+.form-item label {
+
+    background: #3b56a0;
+  position: absolute !important;
+  cursor: text;
+  z-index: 2;
+  top: 13px;
+  margin-left: 12px;
+  font-size: 12px;
+  font-weight: bold;
+
+  border-radius: 4px;
+  padding: 0 10px;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+.form-item label:focus {
+  border: none;
+}
+
+.form-item input:focus + label,
+.form input:valid + label {
+  font-size: 12px;
+  top: -7px;
+}
+
+.form-item input:focus + label {
+  font-size: 13px;
+  color: rgb(255, 255, 255);
+}
+
+.buttonRegistrer {
+  position: relative;
+
+  padding-left: 15rem;
+  border: none;
+  background: none;
+}
+.buttonRegistrer input {
+  background: #3b56a0;
+  border: none;
+
+  width: 120px;
+  height: 40px;
+  font-size: 16px;
+  border-bottom: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  color: #fff;
+
+  border-radius: 3px;
+}
+
+.buttonRegistrer input:hover {
+  border-color: #000000;
+}
+
+
+
+.wave-1 {
+    animation: wavemove1 3s ease-in-out infinite alternate;
+  }
+  
+  .wave-2 {
+    animation: wavemove2 3s 1.2s ease-in-out infinite alternate;
+  }
+  
+  .wave-3 {
+    animation: wavemove3 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes wavemove1 {
+    from {
+      transform: translate(60px);
+    }
+  }
+  
+  @keyframes wavemove2 {
+    from {
+      transform: translate(-60px);
+    }
+  }
+  
+  @keyframes wavemove3 {
+    from {
+      transform: translate(20px);
+    }
+  }
+  

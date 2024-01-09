@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&family=Noto+Sans:wght@100;200;300;400;500;600;700&display=swap");
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-image: url(img/backgroundCad.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;*/
+
+  background-color: #000;
+}
+.form {
+    position: relative;
+    width: 450px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: auto;
+  
+    align-items: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(205, 227, 227);
+    background: linear-gradient(
+      0deg,
+      rgba(205, 227, 227, 1) 0%,
+      rgba(0, 69, 144, 1) 100%
+    );
+  
+  
+  }
+
+.form h1 {
+  color: #ffffff;
+  font-weight: 700;
+  position: absolute;
+  padding-bottom: 70%;
+}
+.head-form {
+  font-size: 13px;
+  display: flex;
+  position: absolute;
+}
+
+.head-form p {
+  margin-bottom: 250px;
+  font-size: 12px;
+  font-weight: 800px;
+}
+
+.footer-form {
+  position: absolute;
+
+  font-size: 13px;
+  display: flex;
+  position: absolute;
+  margin-top: 40px;
+}
+.footer-form p {
+  margin-top: 450px;
+}
+
+
+.form-item {
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  position: relative;
+  margin-bottom: 15px;
+}
+.form-item input {
+  display: block;
+  width: 400px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #08122c;
+  transition: all 0.3s ease;
+  padding: 15px;
+  margin: auto;
+  border-color: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.form-item input:focus {
+  border-color: blue;
+}
+
+.form-item label {
+  position: absolute;
+  cursor: text;
+  z-index: 2;
+  top: 13px;
+  margin-left: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  background: #3b56a0;
+  border-radius: 4px;
+  padding: 0 10px;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+.form-item label:focus {
+  border: none;
+}
+
+.form-item input:focus + label,
+.form input:valid + label {
+  font-size: 12px;
+  top: -7px;
+}
+
+.form-item input:focus + label {
+  font-size: 13px;
+  color: rgb(255, 255, 255);
+}
+
+.buttonRegistrer {
+  position: absolute;
+  padding-top: 90%;
+  margin-left: 15rem;
+  border: none;
+  background: none;
+}
+.buttonRegistrer input {
+  background: #3b56a0;
+  border: none;
+
+  width: 120px;
+  height: 40px;
+  font-size: 16px;
+  border-bottom: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  color: #fff;
+
+  border-radius: 3px;
+}
+
+.buttonRegistrer input:hover {
+  border-color: #000000;
+}
